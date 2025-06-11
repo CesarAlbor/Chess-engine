@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <header>
+        <h1>JS Chess</h1>
+    </header>
+    <main>
+        <div id="FenID">
+            <p>Fen:</p>
+            <br>
+            <input type="text" id="fenIn">
+            <button type="button" id="SetFen">Set position</button>
+        </div>
+        <div id="Board"></div>
+        <div id="EngineOutput">
+            <p>Thinking Time: <br></p>
+            <select id="ThinkingTimeChoice">
+                <option value="1">1s</option>
+                <option value="2">2s</option>
+                <option value="4">4s</option>
+                <option value="6">6s</option>
+                <option value="8">8s</option>
+                <option value="10">10s</option>
+            </select>
+
+            <br><br><br>
+
+            <span id="BestOut">Best Move: </span><br>
+            <span id="DepthOut">Depth: </span><br>
+            <span id="ScoreOut">Score: </span><br>
+            <span id="NodeOut">Nodes: </span><br>
+            <span id="OrderingOut">Ordering: </span><br>
+            <span id="TimeOut">Time: </span><br>
+
+            <br><br>
+
+            <button type="button" id="SearchButton">Move now</button><br>
+            <button type="button" id="NewGameButton">New Game</button><br><br>
+            <button type="button" id="TakeButton">Take Back</button><br>
+
+            <br><br>
+
+            <span id="GameStatus"></span>
+        </div>
+    </main>
+
+    <script src="definitions.js"></script>
+    <script src="io.js"></script>
+    <script src="board.js"></script>
+    <script src="movegen.js"></script>
+    <script src="makemove.js"></script>
+    <script src="evaluate.js"></script>
+    <script src="pvtable.js"></script>
+    <script src="search.js"></script>
+    <script src="perft.js"></script>
+    <script src="gui.js"></script>
+    <script src="chessMain.js"></script>
+    
+</body>
+</html>

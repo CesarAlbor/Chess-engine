@@ -1,0 +1,84 @@
+#fenID {
+    position: relative;
+    left: 60px;
+}
+
+#fenIn {
+    width: 480px;
+    left: 60px;
+}
+
+#Board {
+    position: relative;
+    top: 20px;
+    left: 60px;
+    width: 480px;
+    height: 480px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#EngineOutput {
+    position: absolute;
+    left: 600px;
+    top: 250px;
+}
+
+.Square {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.Dark {
+    background-color: #805835;
+}
+
+.Light {
+    background-color: #d8ba94;
+}
+
+.SqSelected {
+    background-color: #b89a6f;
+}
+
+.rank1 { top: 420px; }
+.rank2 { top: 360px; }
+.rank3 { top: 300px; }
+.rank4 { top: 240px; }
+.rank5 { top: 180px; }
+.rank6 { top: 120px; }
+.rank7 { top: 60px; }
+.rank8 { top: 0px; }
+
+.file1 { left: 0px; }
+.file2 { left: 60px; }
+.file3 { left: 120px; }
+.file4 { left: 180px; }
+.file5 { left: 240px; }
+.file6 { left: 300px; }
+.file7 { left: 360px; }
+.file8 { left: 420px; }
+
+.Piece {
+    cursor: pointer;
+    user-select: none;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(160, 138, 102, 0.8); /* 80% transparent overlay */
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.check {
+    background-color: #d45d30;
+}
