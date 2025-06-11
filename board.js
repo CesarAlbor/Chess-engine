@@ -409,3 +409,5 @@ function SqAttacked(sq, side) {
 	
 
 }
+
+//try
